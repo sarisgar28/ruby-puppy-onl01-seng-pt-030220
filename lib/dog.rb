@@ -6,8 +6,8 @@ attr_accessor  :name
 
 def initialize(name)
   @name = name  
-  @@all << self
-save
+  save
+
 end 
 
 def self.all
@@ -24,6 +24,10 @@ end
   
 def self.clear_all
   @@all.clear do |dogs|
+end 
+
+def save 
+  @@all << self 
 end 
 
 
