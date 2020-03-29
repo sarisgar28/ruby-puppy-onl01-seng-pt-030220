@@ -22,7 +22,7 @@ end
 
   
 def self.clear_all
-  @@all.clear do |dogs|
+  @@all.clear  
 end 
 
 def save 
